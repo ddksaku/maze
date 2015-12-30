@@ -2,259 +2,347 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EnergyBill Maze</title>
-	<link rel="stylesheet" href="css/anim.css">
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="css/anim.css">	    
 </head>
 <body id="main-body">
-
-<div class="parent-div">
-
-<header>
-  <div class="navbar navbar-signup hidden-xs" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="logo" id="logo">
-          <img src="images/logo_bug_white.svg" id="logo-bug" alt="logo lightning bug image" />
-          <img src="images/logo_text_white.svg" id="logo-text" alt="logo text image" />
-        </div>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav pull-right" id="signup-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How It Works</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-default visible-xs" role="navigation" id="top-bar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="logo" id="logo">
-                    <img src="images/logo_bug_white.svg" id="logo-bug" alt="logo lightning bug image" />
-                    <img src="images/logo_text_white.svg" id="logo-text" alt="logo text image" />
+    <div class="parent-div">
+        <header>
+            <div class="navbar navbar-signup hidden-xs" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <div class="logo" id="logo"><img alt="logo lightning bug image" id="logo-bug" src="images/logo_bug_white.svg"> <img alt=
+                        "logo text image" id="logo-text" src="images/logo_text_white.svg"></div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right" id="signup-menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">How It Works</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav pull-right" id="main-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">How It Works</a></li>
-                </ul>
+            <div class="navbar navbar-default visible-xs" id="top-bar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <div class="logo" id="logo"><img alt="logo lightning bug image" id="logo-bug" src="images/logo_bug_white.svg"> <img alt=
+                        "logo text image" id="logo-text" src="images/logo_text_white.svg"></div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right" id="main-menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">How It Works</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cover-container" style="margin-top:-90px;">
+            <div id="container" style="width: 4500px; height: 7000px; position: absolute; top: 0px; left: 0px; margin: 0; padding: 0; overflow: hidden;">
+                <div style=
+                "width: 4500px; height: 660px; left: 450px; top: 0px; position: absolute; background: 0 0 url(pics/House-top.png); background-size: 3500px; background-repeat: no-repeat;">
+                <div style="margin: 100px 1400px; width: 800px; text-align: center;">
+                        <span style="color: rgba(58,56,66,1.00); font-size: 30px; font-weight: bold; font-family: 'Roboto Slab';">There's a better way to
+                        manage your energy,<br>
+                        and it begins here, at EnergyBill.com</span>
+                    </div>
+                    <div style="margin: 250px 1370px; width: 900px; text-align: center;">
+                        <span style="color: white; font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">Making sense of your energy choices is like
+                        trying to find your way through a treacherous maze in the dark. It is a rigged game full of pitfalls and traps.</span>
+                    </div>
+                    <div style="margin: -200px 1403px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">Follow Suzie through the
+                        Maze</span><br>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">(scroll down)</span><br>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&dArr;</span>
+                    </div>
+                    <div style="margin: 840px 1100px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#10549;</span>
+                    </div>
+                    <div style="margin: -175px 1500px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8601;</span> <span style=
+                        "color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
+                    </div>
+                    <div style="margin: 800px 1420px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8600;</span>
+                    </div>
+                    <div style="margin: -100px 1100px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#10230;</span>
+                    </div>
+                    <div style="margin: 800px 1350px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8601;</span> <span style=
+                        "color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
+                    </div>
+                    <div style="margin: -150px 1300px; width: 800px; text-align: center;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span><br>
+                        <span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8595;</span>
+                    </div>
+                </div>
+                <div id="maze" style="position: absolute; top: 660px; background-repeat: no-repeat; background-image: url(pics/MazeWithFeatures.svg)"></div>
+                <div id="signup" style="z-index: -1; position: absolute; top: 5120px; width: 4500px; height: 900px; background-color: rgba(230,177,8,1.0);">
+                    <div style="position: absolute; top: -150px; left: 2193px; background: 0 0 url(pics/fade.png); width: 128px; height: 253px;"></div>
+                    <div style="position: absolute; top: 150px; left: 1800px; width: 900px;">
+                        <img src="pics/fireflyglow.png" style="display: block; margin: 0 auto; width: 190px; height: 190px; transform: rotate(180deg);">
+                        <div style="display: block; width: 100%; text-align: center;">
+                            <img src="pics/logo_text_bw.svg" style="display: block; margin: 0 auto; width: 445px;"> <span style=
+                            "color: rgba(255,255,255,1.00); font-size: 24px; font-weight: normal; font-family: 'Roboto Slab';">It's Simple, it's automated,<br>
+                            it's unbiased and saves you<br>
+                            money. Never Shop for<br>
+                            electricity Again!</span><br>
+                            <br>
+                            <br>
+                            <span style="color: rgba(0,0,0,1.00); font-size: 24px; font-weight: normal; font-family: 'Roboto Slab';">EnergyBill is scheduled to
+                            launch and start accepting users<br>
+                            on January 1st 2016. Check the home page for details.</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" style="position: absolute; top: 660px">
+                    <svg id="mazePath" style="position: absolute;"></svg>
+                    <div class="section" id="section0" style=
+                    "position: absolute; width: 200px; height: 250px; background-image: url(pics/1_Unraveling.svg); background-size: 330px;"></div>
+                    <div class="section" id="section0text" style="position: absolute; width: 550px; height: 200px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Unraveling The
+                        Problem</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Nobody is able to
+                        survive this maze on their own because of how complicated it is. Energy choices are not simple and require more than a household
+                        calculator to understand.</span>
+                    </div>
+                    <div class="section" id="section1" style=
+                    "position: absolute; width: 200px; height: 290px; background-image: url(pics/2_Leveraging.svg); background-size: 250px;"></div>
+                    <div class="section" id="section1text" style="position: absolute; left: 400px; width: 550px; height: 250px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Leveraging Your Smart Meter
+                        & Devices</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Finally take advantage
+                        of your smart meter! We enable “smart” devices to truly live up to their name by turning them into more than just trendy gadgets. By
+                        combining smart devices and appliances with meter, billing, and other data sources, they become tools for helping you save
+                        money.</span>
+                    </div>
+                    <div class="section" id="section2" style=
+                    "position: absolute; width: 200px; height: 254px; background-image: url(pics/3_Analyze.svg); background-size: 250px;"></div>
+                    <div class="section" id="section2text" style="position: absolute; width: 550px; height: 200px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">We Analyze
+                        Everything</span><br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Literally. We’re
+                        talking about weather, meter, thermostat, smart devices and appliances, deregulated energy plans, energy markets, forecasts and
+                        history, anything and everything, to spot the right opportunities and steer clear of pitfalls or traps.</span>
+                    </div>
+                    <div class="section" id="section3" style=
+                    "position: absolute; width: 200px; height: 296px; background-image: url(pics/4_NoSurprises.svg); background-size: 210px;"></div>
+                    <div class="section" id="section3text" style="position: absolute; left: 400px; width: 500px; height: 200px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">No Surprises...</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">We peel back the
+                        layers of fluff and perform real apples-to-apples comparisons so there are no surprises and the end results are savings! Understand the
+                        cost of your energy usage as it happens, like a price tag at the store. Be notified of problems in advance.</span>
+                    </div>
+                    <div class="section" id="section4" style=
+                    "position: absolute; width: 200px; height: 270px; background-image: url(pics/5_Simplify.svg); background-size: 180px;"></div>
+                    <div class="section" id="section4text" style="position: absolute; width: 570px; height: 200px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Simplify Your
+                        Life</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Life is precious,
+                        manage all your energy with just one personally customized tool. EnergyBill brings energy savings and utility rate savings into one
+                        easy, flexible and custom experience. Consolidate your energy bills, budget and home automation devices in one place!</span>
+                    </div>
+                    <div class="section" id="section5" style=
+                    "position: absolute; width: 200px; height: 250px; background-image: url(pics/6_TakeCharge.svg); background-size: 200px;"></div>
+                    <div class="section" id="section5text" style="position: absolute; left: 350px; width: 550px; height: 200px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Take Charge</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Knowledge is power. We
+                        empower people by providing them with knowledge and tools derived from data. EnergyBill is more than just a piece of software, it’s a
+                        digital army at your command.</span>
+                    </div>
+                    <div class="section" id="offSection0" style=
+                    "position: absolute; width: 200px; height: 400px; background-image: url(pics/1_Unraveling_Expanded.svg); background-size: 330px;"></div>
+                    <div class="section" id="offSection0text" style="position: absolute; width: 900px; height: 250px; background: transparent;">
+                        <div style="position: absolute; left: 370px; width: 550px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Complicated
+                            Math</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Utility rates do
+                            not come in the form of one simple price tag that’s easy to understand. The price you pay is not determined until the end of the
+                            month and will vary depending on your energy usage patterns, how much energy you use and when you use it. This is affected by many
+                            influences, like human behavior and the weather. Very complex mathematical models are required to analyze your energy usage.</span>
+                        </div>
+                        <div style="position: absolute; left: 370px; top: 150px; width: 550px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Big Data</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Understanding
+                            energy requires independent data sources from many different providers to be combined together. Even for an expert, there is simply
+                            too much data for a human to analyze. Put in perspective, a years worth of data for a single home can have billions of
+                            records.</span>
+                        </div>
+                        <div style="position: absolute; left: 25px; top: 275px; width: 900px; height: 100px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Unique
+                            Solution</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">The cost of your
+                            utility bill depends on a variety of influences, such as the size of your home, how well insulated it is, how many people live
+                            there, energy rates in your region, and how careful everyone in the household is with energy usage. Homes are as unique as the
+                            people that live in them, in other words, no two are the same. Accordingly, every home has a unique maze and requires a custom path
+                            to energy savings.</span>
+                        </div>
+                    </div>
+                    <div class="section" id="offSection1" style=
+                    "position: absolute; width: 200px; height: 300px; background-image: url(pics/2_Leveraging_Expanded.svg); background-size: 280px;"></div>
+                    <div class="section" id="offSection1text" style="position: absolute; left: 400px; width: 500px; height: 250px; background: transparent;">
+                        <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Your "Smart"
+                        Data</span><br>
+                        <br>
+                        <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">An ever-increasing
+                        amount of data from many independent sources is available to consumers: smart meters, weather stations, utilities and billing, smart
+                        IoT devices / appliances such as HVAC thermostats and water heaters, etc. The problem is that by themselves these data sets are of
+                        limited value. However, when combined together they become very powerful. EnergyBill unleashes the power of your smart meter data. We
+                        take boring numbers and give them life with color and illustrations. Your electric usage suddenly becomes meaningful and powerful.
+                        Receive projected energy bills so there are no more end of the month surprises.</span>
+                    </div>
+                    <div class="section" id="offSection2" style=
+                    "position: absolute; width: 200px; height: 400px; background-image: url(pics/3_Analyze_Expanded.svg); background-size: 360px;"></div>
+                    <div class="section" id="offSection2text" style="position: absolute; width: 900px; height: 250px; background: transparent;">
+                        <div style="position: absolute; left: 415px; width: 500px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Dawn of a New
+                            Age</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill isn't
+                            just a piece of software, it's a kind of artificial intelligence. Proprietary learning algorithms are used to perform analytics on
+                            your data and generate customized mathematical models of your home and appliances. We are constantly monitoring your data, the
+                            energy markets, your utility company, changes in the weather and so on. All of this allows us to forecast your energy usage long
+                            before it happens, and determine the impact of decisions in advance, such as switching to a new utility company or changing your
+                            thermostat temperature.</span>
+                        </div>
+                        <div style="position: absolute; left: 25px; top: 220px; width: 900px; height: 100px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Molehill out of a
+                            Mountain</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Everybody wants to
+                            save, but they don't know how. The key to savings requires a strategy. We will empower you with actionable intelligence. Join with
+                            EnergyBill and beef up your game plan. See your energy usage, never miss a bill, effortless de-regulated switching, one account for
+                            all your energy and automation needs, maximize energy efficiency and savings!</span>
+                        </div>
+                    </div>
+                    <div class="section" id="offSection3" style=
+                    "position: absolute; width: 200px; height: 400px; background-image: url(pics/4_NoSurprises_Expanded.svg); background-size: 310px;"></div>
+                    <div class="section" id="offSection3text" style="position: absolute; width: 900px; height: 250px; background: transparent;">
+                        <div style="position: absolute; width: 600px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">The Devil is in the
+                            details...</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">You probably groan
+                            slightly every month when your utility bill arrives, and you may wonder how you can account for utilities in your monthly budget
+                            when it's so unpredictable. Not anymore. Utility rates can be intimidating, confusing and riddled with small text. The saying goes,
+                            the devil is in the details and so are the surprises. EnergyBill combs through your available energy saving opportunities to
+                            maximize your monthly savings.</span>
+                        </div>
+                        <div style="position: absolute; top: 150px; width: 900px; height: 100px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">What's behind door
+                            number...?</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Don't wait until
+                            the end of the month to find out what you're going to spend. Behind the scenes, our algorithms perform their magic as the energy
+                            matchmaker navigating your unique energy needs through a maze of options to find the perfect strategy to maximize your savings.
+                            Managing your energy is complicated, we’re here to help. You set the budget, and we empower you with the options. Find out what is
+                            behind any energy choice in advance before opening that door.</span>
+                        </div>
+                    </div>
+                    <div class="section" id="offSection4" style=
+                    "position: absolute; width: 200px; height: 400px; background-image: url(pics/5_Simplify_Expanded.svg); background-size: 240px;"></div>
+                    <div class="section" id="offSection4text" style="position: absolute; width: 900px; height: 250px; background: transparent;">
+                        <div style="position: absolute; top:-30px; left: 275px; width: 650px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">We manage everything
+                            automatically</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill makes
+                            managing your home energy usage a cinch. You will never be required to visit a confusing utility website again. In deregulated
+                            areas we automatically switch you with the cheapest provider. We consolidate your bills and deal with the utility company so you
+                            don't have to. All your different energy sources, electricity, gas, and water, are combined into a single context. You can manage
+                            all of your home automation devices in one place and leverage them to save energy!</span>
+                        </div><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';"></span>
+                        <div style="position: absolute; top: 130px; left: 275px; width: 650px; height: 250px; background: transparent;">
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';"><span style=
+                            "color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">True Automation</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Smart appliances
+                            such as your thermostat and water heater can be automatically controlled by EnergyBill to meet a specific budget. Not just based on
+                            a schedule, but based on the energy impact, taking into account your budget and other variables like the weather and usage
+                            patterns.</span></span>
+                        </div>
+                        <div style="position: absolute; top: 250px; width: 925px; height: 100px; background: transparent;">
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">For example, we
+                            can control the temperature for you automatically to stay within budget, and provide an indoor forecast comparable with an outdoor
+                            weather forecast. As the boss, you can set rules to prevent someone in the house from changing the temperature or limit the range.
+                            We can override preset schedules on the device to make sure it's operating the way you want it to, such as preventing the
+                            temperature from randomly changing because of that time your in-laws visited. Stop dealing with the fear of the unknown utility
+                            bill each month and let’s exercise your energy savings opportunities. Stop being confused or unsure. Stop switching between apps to
+                            manage your smart home. Be the master of your energy usage so you can get more out of life. It’s a simple process and is simple to
+                            use. Leverage your smart home for smart savings.</span>
+                        </div>
+                    </div>
+                    <div class="section" id="offSection5" style=
+                    "position: absolute; width: 200px; height: 400px; background-image: url(pics/6_TakeCharge_Expanded.svg); background-size: 220px;"></div>
+                    <div class="section" id="offSection5text" style="position: absolute; left: 250px; width: 650px; height: 250px; background: transparent;">
+                        <div style="position: absolute; width: 600px; height: 250px; background: transparent;">
+                            <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Be protected with
+                            EnergyBill</span><br>
+                            <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill gives
+                            you the tools to track, trend, analyze and <strong>CONTROL</strong> all of your energy usage, for electric, natural gas, water, and
+                            propane.<br></span>
+                            <ul>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">No more
+                                shopping for energy providers in deregulated areas</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Receive
+                                and pay all your energy bills through us - in one location</span></li>
+                                <li><span style=
+                                "color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Consolidate multiple
+                                homes, businesses or apartments into one EnergyBill account, share access between users or roommates</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Project
+                                energy bills so there are no more end of the month surprises!</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">See how
+                                much specific things like your water heater cost to operate</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Obtain
+                                cost reporting like a pricetag on your smart devices and appliances</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Actionable
+                                energy information in understandable terms - dollars!</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Control
+                                your smart home from one app!</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Manage
+                                smart devices like your thermostat to meet a energy budget</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Obtain
+                                regular energy audits on your house automatically</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Receive
+                                notification when problems are detected, such as a faulty air conditioner or even leaky windows, that require
+                                service</span></li>
+                                <li><span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Integrate
+                                and manage power generation sources such as solar.</span></li>
+                            </ul>
+                        </div><!--<div style="position: absolute; top: 150px; width: 900px; height: 100px; background: transparent;">
+                <span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">What's behind door number...?</span><br>
+                <span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Don't wait until the end of the month to find out what you're going to spend.  Behind the scenes, our algorithms perform their magic as the energy matchmaker navigating your unique energy needs through a maze of options to find the perfect strategy to maximize your savings. Managing your energy is complicated, we’re here to help. You set the budget, and we empower you with the options.  Find out what is behind any energy choice in advance before opening that door.</span>
+            </div>  -->
+                    </div>
+                </div>
             </div>
         </div>
-  </div>
-</header>
+    </div>
 
-<div class="cover-container" style="margin-top:-90px;">
-
-<div id="container" style="width: 4500px; height: 7000px; position: absolute; top: 0px; left: 0px; margin: 0; padding: 0; overflow: hidden;">
-	<div style="width: 4500px; height: 660px; left: 450px; top: 0px; position: absolute; background: 0 0 url(pics/House-top.png); background-size: 3500px; background-repeat: no-repeat;">
-		<div style="margin: 100px 1400px; width: 800px; text-align: center;">
-			<span style="color: rgba(58,56,66,1.00); font-size: 30px; font-weight: bold; font-family: 'Roboto Slab';">There's a better way to manage your energy,<br> and it begins here, at EnergyBill.com</span>
-		</div>
-		<div style="margin: 250px 1370px; width: 900px; text-align: center;">
-			<span style="color: white; font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">Making sense of your energy choices is like trying to find your way through a treacherous maze in the dark. It is a rigged game full of pitfalls and traps.</span>
-		</div>	
-		<div style="margin: -200px 1403px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">Follow Suzie through the Maze</span><br>
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">(scroll down)</span><br>
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&dArr;</span>
-		</div>
-		<div style="margin: 840px 1100px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#10549;</span>
-		</div>	
-		<div style="margin: -175px 1500px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8601;</span>
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>				
-		</div>	
-		<div style="margin: 800px 1420px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>	
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8600;</span>							
-		</div>	
-		<div style="margin: -100px 1100px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>	
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#10230;</span>							
-		</div>	
-		<div style="margin: 800px 1350px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8601;</span>	
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span>											
-		</div>	
-		<div style="margin: -150px 1300px; width: 800px; text-align: center;">
-			<span style="color: rgba(234,192,51,1.00); font-size: 10px; font-weight: bold; font-family: 'Roboto Slab';">Keep scrolling</span><br>
-			<span style="color: rgba(234,192,51,1.00); font-size: 24px; font-weight: bold; font-family: 'Roboto Slab';">&#8595;</span>	
-													
-		</div>			
-	</div>
-
-	<div id="maze" style="position: absolute; top: 660px; background-repeat: no-repeat; background-image: url(pics/MazeWithFeatures.svg)"></div>
-	<div id="signup" style="z-index: -1; position: absolute; top: 5120px; width: 4500px; height: 900px; background-color: rgba(230,177,8,1.0);">
-		<div style="position: absolute; top: -150px; left: 2193px; background: 0 0 url(pics/fade.png); width: 128px; height: 253px;"></div>
-		<div style="position: absolute; top: 150px; left: 1800px; width: 900px;">
-			<img style="display: block; margin: 0 auto; width: 190px; height: 190px; transform: rotate(180deg);" src="pics/fireflyglow.png"></img>
-			<div style="display: block; width: 100%; text-align: center;">
-				<img style="display: block; margin: 0 auto; width: 445px; " src="pics/logo_text_bw.svg">
-				<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: normal; font-family: 'Roboto Slab';">It's Simple, it's automated,<br>it's unbiased and saves you<br>money. Never Shop for<br>electricity Again!</span>
-				<br><br><br>
-				<span style="color: rgba(0,0,0,1.00); font-size: 24px; font-weight: normal; font-family: 'Roboto Slab';">EnergyBill is scheduled to launch and start accepting users<br> on January 1st 2016.  Check the home page for details.</span>
-			
-			</div>
-			
-		</div>			
-	</div>
-	<div id="overlay" style="position: absolute; top: 660px">
-		<svg id="mazePath" style="position: absolute;"></svg>
-		
-		<div id="section0" class="section" style="position: absolute; width: 200px; height: 250px; background-image: url(pics/1_Unraveling.svg); background-size: 330px;"></div>
-		<div id="section0text" class="section" style="position: absolute; width: 550px; height: 200px; background: transparent;" buttondir="left" buttonL="0" buttonB="0">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Unraveling The Problem</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Nobody is able to survive this maze on their own because of how complicated it is.  Energy choices are not  simple and require more than a household calculator to understand.</span>
-		</div>			
-
-		<div id="section1" class="section" style="position: absolute; width: 200px; height: 290px; background-image: url(pics/2_Leveraging.svg); background-size: 250px;"></div>
-		<div id="section1text" class="section" style="position: absolute; left: 400px; width: 550px; height: 250px; background: transparent;" buttondir="right" buttonL="400" buttonB="-10">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Leveraging Your Smart Meter & Devices</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Finally take advantage of your smart meter! We enable “smart” devices to truly live up to their name by turning them into more than just trendy gadgets. By combining smart devices and appliances with meter, billing, and other data sources, they become tools for helping you save money.</span>
-		</div>
-
-		<div id="section2" class="section" style="position: absolute; width: 200px; height: 254px; background-image: url(pics/3_Analyze.svg); background-size: 250px;"></div>
-		<div id="section2text" class="section" style="position: absolute; width: 550px; height: 200px; background: transparent;" buttondir="left" buttonL="0" buttonB="-10">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">We Analyze Everything</span><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Literally.  We’re talking about weather, meter, thermostat, smart devices and appliances, deregulated energy plans, energy markets, forecasts and history, anything and everything, to spot the right opportunities and steer clear of pitfalls or traps.</span>
-		</div>
-
-		<div id="section3" class="section" style="position: absolute; width: 200px; height: 296px; background-image: url(pics/4_NoSurprises.svg); background-size: 210px;"></div>
-		<div id="section3text" class="section" style="position: absolute; left: 400px; width: 500px; height: 200px; background: transparent;" buttondir="right" buttonL="405" buttonB="0">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">No Surprises...</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">We peel back the layers of fluff and perform real apples-to-apples comparisons so there are no surprises and the end results are savings!  Understand the cost of your energy usage as it happens, like a price tag at the store. Be notified of problems in advance.</span>
-		</div>
-
-		<div id="section4" class="section" style="position: absolute; width: 200px; height: 270px; background-image: url(pics/5_Simplify.svg); background-size: 180px;"></div>
-		<div id="section4text" class="section" style="position: absolute; width: 570px; height: 200px; background: transparent;" buttondir="left" buttonL="0" buttonB="-10">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Simplify Your Life</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Life is precious, manage all your energy with just one personally customized tool. EnergyBill brings energy savings and utility rate savings into one easy, flexible and custom experience. Consolidate your energy bills, budget and home automation devices in one place!</span>
-		</div>
-
-		<div id="section5" class="section" style="position: absolute; width: 200px; height: 250px; background-image: url(pics/6_TakeCharge.svg); background-size: 200px;"></div>
-		<div id="section5text" class="section" style="position: absolute; left: 350px; width: 550px; height: 200px; background: transparent;" buttondir="right" buttonL="350" buttonB="0">
-			<span style="color: rgba(234,192,51,1.00); font-size: 28px; font-weight: bold; font-family: 'Roboto Slab';">Take Charge</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 24px; font-weight: regular; font-family: 'Proxima Nova';">Knowledge is power.  We empower people by providing them with knowledge and tools derived from data. EnergyBill is more than just a piece of software, it’s a digital army at your command.</span>
-		</div>
-
-		<div id="offSection0" class="section" style="position: absolute; width: 200px; height: 400px; background-image: url(pics/1_Unraveling_Expanded.svg); background-size: 330px;"></div>
-		<div id="offSection0text" class="section" style="position: absolute; width: 900px; height: 250px; background: transparent;" buttondir="right" buttonL="700" buttonB="-40">
-			<div style="position: absolute; left: 370px; width: 550px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Complicated Math</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Utility rates do not come in the form of one simple price tag that’s easy to understand. The price you pay is not determined until the end of the month and will vary depending on your energy usage patterns, how much energy you use and when you use it.  This is affected by many influences, like human behavior and the weather. Very complex mathematical models are required to analyze your energy usage.</span>
-			</div>
-			<div style="position: absolute; left: 370px; top: 150px; width: 550px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Big Data</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Understanding energy requires independent data sources from many different providers to be combined together.  Even for an expert, there is simply too much data for a human to analyze.  Put in perspective, a years worth of data for a single home can have billions of records. </span>
-			</div>
-			<div style="position: absolute; left: 25px; top: 275px; width: 900px; height: 100px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Unique Solution</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">The cost of your utility bill depends on a variety of influences, such as the size of your home, how well insulated it is, how many people live there, energy rates in your region, and how careful everyone in the household is with energy usage. Homes are as unique as the people that live in them, in other words, no two are the same. Accordingly, every home has a unique maze and requires a custom path to energy savings.</span>
-			</div>				
-		</div>
-
-		<div id="offSection1" class="section" style="position: absolute; width: 200px; height: 300px; background-image: url(pics/2_Leveraging_Expanded.svg); background-size: 280px;"></div>
-		<div id="offSection1text" class="section" style="position: absolute; left: 400px; width: 500px; height: 250px; background: transparent;" buttondir="left" buttonL="350" buttonB="-20">
-			<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Your "Smart" Data</span><br><br>
-			<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">An ever-increasing amount of data from many independent sources is available to consumers: smart meters, weather stations, utilities and billing, smart IoT devices / appliances such as HVAC thermostats and water heaters, etc.  The problem is that by themselves these data sets are of limited value. However, when combined together they become very powerful. EnergyBill unleashes the power of your smart meter data. We take boring numbers and give them life with color and illustrations. Your electric usage suddenly becomes meaningful and powerful. Receive projected energy bills so there are no more end of the month surprises. </span>
-		</div>
-
-		<div id="offSection2" class="section" style="position: absolute; width: 200px; height: 400px; background-image: url(pics/3_Analyze_Expanded.svg); background-size: 360px;"></div>
-		<div id="offSection2text" class="section" style="position: absolute; width: 900px; height: 250px; background: transparent;" buttondir="right" buttonL="750" buttonB="-20">
-			<div style="position: absolute; left: 415px; width: 500px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Dawn of a New Age</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill isn't just a piece of software, it's a kind of artificial intelligence.  Proprietary learning algorithms are used to perform analytics on your data and generate customized mathematical models of your home and appliances.  We are constantly monitoring your data, the energy markets, your utility company, changes in the weather and so on.  All of this allows us to forecast your energy usage long before it happens, and determine the impact of decisions in advance, such as switching to a new utility company or changing your thermostat temperature.</span>
-			</div>
-			<div style="position: absolute; left: 25px; top: 220px; width: 900px; height: 100px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Molehill out of a Mountain</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Everybody wants to save, but they don't know how. The key to savings requires a strategy.  We will empower you with actionable intelligence. Join with EnergyBill and beef up your game plan.  See your energy usage, never miss a bill, effortless de-regulated switching, one account for all your energy and automation needs, maximize energy efficiency and savings! </span>
-			</div>	
-		</div>
-
-		<div id="offSection3" class="section" style="position: absolute; width: 200px; height: 400px; background-image: url(pics/4_NoSurprises_Expanded.svg); background-size: 310px;"></div>
-		<div id="offSection3text" class="section" style="position: absolute; width: 900px; height: 250px; background: transparent;" buttondir="left" buttonL="0" buttonb="0">
-			<div style="position: absolute; width: 600px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">The Devil is in the details...</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">You probably groan slightly every month when your utility bill arrives, and you may wonder how you can account for utilities in your monthly budget when it's so unpredictable.  Not anymore. Utility rates can be intimidating, confusing and riddled with small text.  The saying goes, the devil is in the details and so are the surprises. EnergyBill combs through your available energy saving opportunities to maximize your monthly savings.</span>
-			</div>
-			<div style="position: absolute; top: 150px; width: 900px; height: 100px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">What's behind door number...?</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Don't wait until the end of the month to find out what you're going to spend.  Behind the scenes, our algorithms perform their magic as the energy matchmaker navigating your unique energy needs through a maze of options to find the perfect strategy to maximize your savings. Managing your energy is complicated, we’re here to help. You set the budget, and we empower you with the options.  Find out what is behind any energy choice in advance before opening that door.</span>
-			</div>	
-		</div>
-
-		<div id="offSection4" class="section" style="position: absolute; width: 200px; height: 400px; background-image: url(pics/5_Simplify_Expanded.svg); background-size: 240px;"></div>
-		<div id="offSection4text" class="section" style="position: absolute; width: 900px; height: 250px; background: transparent;" buttondir="right" buttonL="700" buttonB="-60">
-			<div style="position: absolute; top:-30px; left: 275px; width: 650px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">We manage everything automatically</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill makes managing your home energy usage a cinch. You will never be required to visit a confusing utility website again. In deregulated areas we automatically switch you with the cheapest provider. We consolidate your bills and deal with the utility company so you don't have to. All your different energy sources, electricity, gas, and water, are combined into a single context. You can manage all of your home automation devices in one place and leverage them to save energy!
-			</div>
-			<div style="position: absolute; top: 130px; left: 275px; width: 650px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">True Automation</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Smart appliances such as your thermostat and water heater can be automatically controlled by EnergyBill to meet a specific budget. Not just based on a schedule, but based on the energy impact, taking into account your budget and other variables like the weather and usage patterns.</span>
-			</div>
-			<div style="position: absolute; top: 250px; width: 925px; height: 100px; background: transparent;">
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">For example, we can control the temperature for you automatically to stay within budget, and provide an indoor forecast comparable with an outdoor weather forecast. As the boss, you can set rules to prevent someone in the house from changing the temperature or limit the range.  We can override preset schedules on the device to make sure it's operating the way you want it to, such as preventing the temperature from randomly changing because of that time your in-laws visited. Stop dealing with the fear of the unknown utility bill each month and let’s exercise your energy savings opportunities. Stop being confused or unsure. Stop switching between apps to manage your smart home. Be the master of your energy usage so you can get more out of life. It’s a simple process and is simple to use. Leverage your smart home for smart savings. </span>
-			</div>	
-		</div>
-
-		<div id="offSection5" class="section" style="position: absolute; width: 200px; height: 400px; background-image: url(pics/6_TakeCharge_Expanded.svg); background-size: 220px;"></div>
-		<div id="offSection5text" class="section" style="position: absolute; left: 250px; width: 650px; height: 250px; background: transparent;" buttondir="left" buttonL="0" buttonB="0">
-			<div style="position: absolute; width: 600px; height: 250px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">Be protected with EnergyBill</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">EnergyBill gives you the tools to track, trend, analyze and <strong>CONTROL</strong> all of your energy usage, for electric, natural gas, water, and propane.<br>
-				<ul>
-					<li>No more shopping for energy providers in deregulated areas</li>
-					<li>Receive and pay all your energy bills through us - in one location</li>
-					<li>Consolidate multiple homes, businesses or apartments into one EnergyBill account, share access between users or roommates</li>
-					<li>Project energy bills so there are no more end of the month surprises!</li>
-					<li>See how much specific things like your water heater cost to operate</li>
-					<li>Obtain cost reporting like a pricetag on your smart devices and appliances</li>
-					<li>Actionable energy information in understandable terms - dollars!</li>
-					<li>Control your smart home from one app!</li>
-					<li>Manage smart devices like your thermostat to meet a energy budget</li>
-					<li>Obtain regular energy audits on your house automatically</li>
-					<li>Receive notification when problems are detected, such as a faulty air conditioner or even leaky windows, that require service</li>
-					<li>Integrate and manage power generation sources such as solar.</li>
-				</ul>
-				</span>
-			</div>
-			<!--<div style="position: absolute; top: 150px; width: 900px; height: 100px; background: transparent;">
-				<span style="color: rgba(234,192,51,1.00); font-size: 22px; font-weight: bold; font-family: 'Roboto Slab';">What's behind door number...?</span><br>
-				<span style="color: rgba(255,255,255,1.00); font-size: 18px; font-weight: regular; font-family: 'Proxima Nova';">Don't wait until the end of the month to find out what you're going to spend.  Behind the scenes, our algorithms perform their magic as the energy matchmaker navigating your unique energy needs through a maze of options to find the perfect strategy to maximize your savings. Managing your energy is complicated, we’re here to help. You set the budget, and we empower you with the options.  Find out what is behind any energy choice in advance before opening that door.</span>
-			</div>	-->
-		</div>			
-	</div>
-</div>
-
-</div>
-
-
-
-</div>
-
-<script src="js/anim.js"></script>
-
-<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--<script src="js/bootstrap.min.js"></script>-->
-
-<script src="js/SmoothScroll.js"></script>
-
+    <!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/debounce/jquery.ba-throttle-debounce.min.js"></script>    
+    <script src="js/anim.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/SmoothScroll.js"></script>
 </body>
 </html>

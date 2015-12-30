@@ -417,5 +417,21 @@ $(function(){
 		render(); 
 	});
 
+	// $window.scroll($.debounce(250, function() {
+ //    	render();
+	// }));
+
+	// $('.parent-div').scroll($.debounce(250, function() {
+ //    	render();
+	// }));
+
+	$window.scroll($.debounce(250, true, function() {
+    	render();
+	}));
+
+	$('.parent-div').scroll($.debounce(250, true, function() {
+    	render();
+	}));
+
 	render();
 });
