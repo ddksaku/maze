@@ -255,7 +255,7 @@ for (i=0; i<offSections.length; i++) {
 	$fireFlies.push($fireFly);
 }
 
-var offPathTime = 1000;
+var offPathTime = 10;
 window.offSection = -1;
 function render() {
 	// var top = ($window.scrollTop() + (0.4 * $window.height())) / window.scale;
@@ -314,7 +314,7 @@ function render() {
 		$container.animate({
 				left: "-1550px",
 				top: "0px"
-			}, 500);
+			}, 10);
 	}
 
 	var pathIdx = -1;
@@ -369,6 +369,7 @@ function render() {
 		if (d < 0.07) {
 			var $section = $("#section" + i);
 			$section.addClass("sectionActive");
+			return;
 		}
 	}
 }
