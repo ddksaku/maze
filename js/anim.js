@@ -410,13 +410,13 @@ $(function(){
 		updateScale();
 	});
 
-	$window.scroll(function() {
-		render(); 
-	});
+	// $window.scroll(function() {
+	// 	render(); 
+	// });
 
-	$('.parent-div').scroll(function() {
-		render(); 
-	});
+	// $('.parent-div').scroll(function() {
+	// 	render(); 
+	// });
 
 	// $window.scroll($.debounce(250, function() {
  //    	render();
